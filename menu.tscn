@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://datv4ipmvaooe"]
+[gd_scene load_steps=3 format=3 uid="uid://ea0ds3pi7sdk"]
 
 [ext_resource type="Texture2D" uid="uid://djgh8aoigmpi1" path="res://bg.png" id="1_n6xmb"]
 [ext_resource type="Script" path="res://Button.gd" id="2_aquo4"]
@@ -16,7 +16,7 @@ offset_top = 138.0
 offset_right = 655.0
 offset_bottom = 201.0
 theme_override_font_sizes/font_size = 30
-text = "play suka blyat"
+text = "play suka blyat228"
 script = ExtResource("2_aquo4")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
