@@ -1,7 +1,9 @@
 extends ParallaxBackground
 
 var move_k = Vector2(-0.5, -0.1)
-var move_k2 = 0.06
+var move_k2 = 0.04
+
+
 var mouse_pos = Vector2(0, 0)
 const camera_offset = Vector2(0, 3)
 
