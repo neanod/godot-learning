@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://yp2u8d348xoj"]
 
-[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_w1imu"]
+[ext_resource type="PackedScene" path="res://bg.tscn" id="1_w1imu"]
 [ext_resource type="Texture2D" uid="uid://j0bts4rb4lem" path="res://assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_eywhl"]
 [ext_resource type="PackedScene" uid="uid://dsarg74kqfjpd" path="res://levels/portal.tscn" id="3_df16n"]
 [ext_resource type="PackedScene" uid="uid://btl666eanlt22" path="res://levels/portal2.tscn" id="4_t8okr"]
@@ -22,6 +22,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+ 
 "
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_imwp5"]

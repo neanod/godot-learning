@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://j1bvyvmf0x7v"]
 
-[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_jlrcg"]
+[ext_resource type="PackedScene" path="res://bg.tscn" id="1_jlrcg"]
 [ext_resource type="Texture2D" uid="uid://j0bts4rb4lem" path="res://assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_0f1xt"]
 [ext_resource type="PackedScene" uid="uid://0hpw4vjegxlr" path="res://Player/player.tscn" id="3_5rtvu"]
 [ext_resource type="PackedScene" uid="uid://vpx850jujnjb" path="res://skeleton/skeleton.tscn" id="4_eekn3"]
@@ -1258,7 +1258,7 @@ texture = ExtResource("2_0f1xt")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_imwp5")
 
-[node name="Lobby" type="Node2D"]
+[node name="Lobby2" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-28.0]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_jlrcg")]

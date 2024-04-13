@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c1q1g0lp2g7r1"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_5rfqy"]
-[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="2_retak"]
+[ext_resource type="PackedScene" uid="uid://krjhbttmyhf4" path="res://bg.tscn" id="2_retak"]
 [ext_resource type="AudioStream" uid="uid://bel1bdimsnmhh" path="res://Music/8337f26d57093343.mp3" id="3_lye0l"]
 
 [node name="Menu" type="Node2D"]
