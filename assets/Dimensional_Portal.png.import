@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://druvy45orc28m"
-path="res://.godot/imported/k (2).png-4f5e46866e1dcbaac91a6a8c8c659df0.ctex"
+uid="uid://bq5sae44ncb7o"
+path="res://.godot/imported/Dimensional_Portal.png-35fd3a80009fe90aec5607b67c7e5d1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://k (2).png"
-dest_files=["res://.godot/imported/k (2).png-4f5e46866e1dcbaac91a6a8c8c659df0.ctex"]
+source_file="res://assets/Dimensional_Portal.png"
+dest_files=["res://.godot/imported/Dimensional_Portal.png-35fd3a80009fe90aec5607b67c7e5d1b.ctex"]
 
 [params]
 
