@@ -47,4 +47,10 @@ func _physics_process(delta):
 
 
 func _on_area_2d_body_entered(body):
-	pass # Replace with function body.
+		if body.name == "Skeleton2D":
+			death()
+			
+func death ():
+	anim.play("death")
+	queue_free()
+	
