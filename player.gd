@@ -35,5 +35,7 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = true
 	elif direction == 1:
 		$AnimatedSprite2D.flip_h = false 
+	if velocity.y>0:
+		anim.play("fall")
 
 	move_and_slide()
