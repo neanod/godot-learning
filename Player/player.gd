@@ -10,6 +10,10 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 @onready var anim = $AnimatedSprite2D
 
 
+func get_quota_size(day):
+	return day * day * 2 + 130
+
+
 func _physics_process(delta):
 
 	# Add the gravity.
