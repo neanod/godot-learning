@@ -3,7 +3,7 @@ extends ParallaxBackground
 var move_k = Vector2(-0.5, -0.1)
 var move_k2 = 0.06
 var mouse_pos = Vector2(0, 0)
-const camera_offset = Vector2(0, 7)
+const camera_offset = Vector2(0, 3)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -13,4 +13,4 @@ func _process(delta):
 func _input(event):
 	if event is InputEventMouseMotion:
 		mouse_pos = event.position
-	
+
