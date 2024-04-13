@@ -24,6 +24,7 @@ text = "QUIT"
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_retak")]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
 stream = ExtResource("3_lye0l")
 volume_db = -21.668
 autoplay = true
