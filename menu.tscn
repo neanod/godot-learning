@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c1q1g0lp2g7r1"]
+[gd_scene load_steps=4 format=3 uid="uid://c1q1g0lp2g7r1"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_5rfqy"]
-[ext_resource type="PackedScene" path="res://bg.tscn" id="2_retak"]
+[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="2_retak"]
+[ext_resource type="AudioStream" uid="uid://bel1bdimsnmhh" path="res://Music/8337f26d57093343.mp3" id="3_lye0l"]
 
 [node name="Menu" type="Node2D"]
 script = ExtResource("1_5rfqy")
@@ -21,6 +22,11 @@ offset_bottom = 640.0
 text = "QUIT"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_retak")]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_lye0l")
+volume_db = -21.668
+autoplay = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
