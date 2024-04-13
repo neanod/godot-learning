@@ -1,5 +1,6 @@
-[gd_scene load_steps=34 format=3 uid="uid://0hpw4vjegxlr"]
+[gd_scene load_steps=35 format=3 uid="uid://0hpw4vjegxlr"]
 
+[ext_resource type="Script" path="res://player.gd" id="1_0hi42"]
 [ext_resource type="Texture2D" uid="uid://1iub784fm2rs" path="res://assets/oak_woods_v1.0/character/char_blue.png" id="1_3hf65"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_n3q4q"]
@@ -240,6 +241,7 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
+script = ExtResource("1_0hi42")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_n3q4q")
