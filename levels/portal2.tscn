@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://btl666eanlt22"]
+
+[ext_resource type="Script" path="res://levels/portal2.gd" id="1_1pdqt"]
+[ext_resource type="Texture2D" uid="uid://bq5sae44ncb7o" path="res://assets/Dimensional_Portal.png" id="2_yob5i"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qulrj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6dpcw"]
+atlas = ExtResource("2_yob5i")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sumnh"]
+atlas = ExtResource("2_yob5i")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_04q44"]
+atlas = ExtResource("2_yob5i")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4mme"]
+atlas = ExtResource("2_yob5i")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o7i1f"]
+atlas = ExtResource("2_yob5i")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3akfu"]
+atlas = ExtResource("2_yob5i")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_io4pq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6dpcw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sumnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_04q44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p4mme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o7i1f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3akfu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_1pdqt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(3.21, 3.21)
+shape = SubResource("CapsuleShape2D_qulrj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(3.21, 3.21)
+sprite_frames = SubResource("SpriteFrames_io4pq")
+frame_progress = 0.622139
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

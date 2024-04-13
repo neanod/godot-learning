@@ -1273,3 +1273,10 @@ position = Vector2(117, 1001)
 
 [node name="skeleton" parent="." instance=ExtResource("4_eekn3")]
 position = Vector2(765, 996)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 33.0
+offset_top = 986.0
+offset_right = 73.0
+offset_bottom = 1009.0
+text = "LEVEL1"
