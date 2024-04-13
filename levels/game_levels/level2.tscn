@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://jlhtyg6dmsb3"]
+[gd_scene load_steps=5 format=3 uid="uid://kqveyri76l1x"]
 
-[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_jlrcg"]
-[ext_resource type="Texture2D" uid="uid://j0bts4rb4lem" path="res://assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_0f1xt"]
+[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_7idg5"]
+[ext_resource type="Texture2D" uid="uid://j0bts4rb4lem" path="res://assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_2vv11"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_imwp5"]
-texture = ExtResource("2_0f1xt")
+texture = ExtResource("2_2vv11")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1258,7 +1258,7 @@ sources/0 = SubResource("TileSetAtlasSource_imwp5")
 [node name="Lobby" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-28.0]
 
-[node name="ParallaxBackground" parent="." instance=ExtResource("1_jlrcg")]
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_7idg5")]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_22lmq")
