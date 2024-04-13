@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhd7pt265o8v"]
+
+[ext_resource type="PackedScene" path="res://bg.tscn" id="1_3yoyr"]
+
+[node name="ParallaxBackground" instance=ExtResource("1_3yoyr")]
+
+[node name="ParallaxLayer" parent="." index="0"]
+position = Vector2(5, 115)
+
+[node name="BackgroundLayer1" parent="ParallaxLayer" index="0"]
+position = Vector2(720, 352)
+scale = Vector2(4.845, 6.7)
+
+[node name="ParallaxLayer2" parent="." index="1"]
+position = Vector2(5, 115)
+
+[node name="BackgroundLayer2" parent="ParallaxLayer2" index="0"]
+position = Vector2(715, 349.5)
+scale = Vector2(4.845, 6.75)
+
+[node name="ParallaxLayer3" parent="." index="2"]
+position = Vector2(5, 115)
+
+[node name="BackgroundLayer3" parent="ParallaxLayer3" index="0"]
+position = Vector2(717, 346.262)
+scale = Vector2(4.845, 6.72514)
