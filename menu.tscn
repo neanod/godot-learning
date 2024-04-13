@@ -8,18 +8,23 @@
 script = ExtResource("1_5rfqy")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 828.0
-offset_top = 311.0
-offset_right = 1121.0
-offset_bottom = 434.0
-text = "PLAY YEPTA"
+offset_left = 821.0
+offset_top = 270.0
+offset_right = 1114.0
+offset_bottom = 393.0
+theme_override_colors/font_color = Color(0.905882, 0.196078, 0.52549, 1)
+theme_override_font_sizes/font_size = 50
+text = "Играть"
 
 [node name="Button2" type="Button" parent="."]
-offset_left = 824.0
-offset_top = 521.0
-offset_right = 1123.0
-offset_bottom = 640.0
-text = "QUIT"
+offset_left = 820.0
+offset_top = 462.0
+offset_right = 1119.0
+offset_bottom = 581.0
+theme_override_colors/font_color = Color(0.521569, 0.00392157, 0.937255, 1)
+theme_override_font_sizes/font_size = 50
+text = "Выход
+"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_retak")]
 
@@ -27,6 +32,15 @@ text = "QUIT"
 stream = ExtResource("3_lye0l")
 volume_db = -21.668
 autoplay = true
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 895.0
+offset_top = 659.0
+offset_right = 1060.0
+offset_bottom = 714.0
+theme_override_colors/font_color = Color(0.854902, 0.172549, 0.552941, 1)
+theme_override_font_sizes/font_size = 25
+text = "Авторы"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
