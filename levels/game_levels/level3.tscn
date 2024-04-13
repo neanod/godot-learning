@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgdy8asp3gqeg"]
+[gd_scene load_steps=7 format=3 uid="uid://dgdy8asp3gqeg"]
 
 [ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_k8tkr"]
 [ext_resource type="Texture2D" uid="uid://j0bts4rb4lem" path="res://assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_teiyx"]
@@ -1256,6 +1256,8 @@ texture = ExtResource("2_teiyx")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_imwp5")
 
+[sub_resource type="Theme" id="Theme_ggoe2"]
+
 [node name="Lobby" type="Node2D"]
 metadata/_edit_horizontal_guides_ = [-28.0]
 
@@ -1276,4 +1278,5 @@ offset_left = 33.0
 offset_top = 986.0
 offset_right = 73.0
 offset_bottom = 1009.0
+theme = SubResource("Theme_ggoe2")
 text = "LEVEL3"
