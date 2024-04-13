@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://yp2u8d348xoj"]
+[gd_scene load_steps=13 format=3 uid="uid://yp2u8d348xoj"]
 
 [ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_w1imu"]
 [ext_resource type="Texture2D" uid="uid://j0bts4rb4lem" path="res://assets/oak_woods_v1.0/oak_woods_tileset.png" id="2_eywhl"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dgwd5d462si13" path="res://levels/portal3.tscn" id="5_dfyia"]
 [ext_resource type="AudioStream" uid="uid://bel1bdimsnmhh" path="res://Music/8337f26d57093343.mp3" id="7_qq618"]
 [ext_resource type="Texture2D" uid="uid://bb861rr7km8vq" path="res://assets/alenka-face.jpg" id="8_bap48"]
+[ext_resource type="PackedScene" uid="uid://vpx850jujnjb" path="res://skeleton/skeleton.tscn" id="9_2v8vc"]
 
 [sub_resource type="GDScript" id="GDScript_e4lw4"]
 script/source = "extends Node2D
@@ -1299,7 +1300,7 @@ position = Vector2(449, 923)
 position = Vector2(616, 923)
 
 [node name="player" parent="." instance=ExtResource("5_5gr6o")]
-position = Vector2(585, 655)
+position = Vector2(181, 675)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_qq618")
@@ -1309,5 +1310,23 @@ autoplay = true
 [node name="Alenka-face" type="Sprite2D" parent="."]
 position = Vector2(1752, 1062)
 texture = ExtResource("8_bap48")
+
+[node name="skeleton" parent="." instance=ExtResource("9_2v8vc")]
+position = Vector2(1889, 974)
+
+[node name="skeleton2" parent="." instance=ExtResource("9_2v8vc")]
+position = Vector2(1886, 905)
+
+[node name="skeleton3" parent="." instance=ExtResource("9_2v8vc")]
+position = Vector2(1837, 969)
+
+[node name="skeleton4" parent="." instance=ExtResource("9_2v8vc")]
+position = Vector2(1838, 903)
+
+[node name="skeleton5" parent="." instance=ExtResource("9_2v8vc")]
+position = Vector2(1877, 840)
+
+[node name="skeleton6" parent="." instance=ExtResource("9_2v8vc")]
+position = Vector2(1836, 830)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
