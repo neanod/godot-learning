@@ -1262,6 +1262,7 @@ metadata/_edit_horizontal_guides_ = [-28.0]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_jlrcg")]
 scroll_offset = Vector2(0, -1811)
+script = null
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_22lmq")
