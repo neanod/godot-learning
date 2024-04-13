@@ -16,3 +16,8 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		mouse_pos = event.position
 
+
+
+func _on_button_1_pressed():
+	get_tree().change_scene_to_file("res://menu.tscn")
+	

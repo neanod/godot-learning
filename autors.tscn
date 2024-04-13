@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmvbskrprboj4"]
+
+[ext_resource type="PackedScene" uid="uid://cef05r4vv8b8p" path="res://bg.tscn" id="1_ov2by"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_ov2by")]
+
+[node name="Button" type="Button" parent="ParallaxBackground"]
+offset_right = 2774.0
+offset_bottom = 1200.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 534.0
+offset_top = 378.0
+offset_right = 1558.0
+offset_bottom = 824.0
+theme_override_colors/font_color = Color(0.94902, 0.0470588, 0.54902, 1)
+theme_override_font_sizes/font_size = 50
+text = "Widger - дизайнер
+Neanod - главный разработчик
+mr_egorian - второсортный разработчик
+KSG_KotSem - гениальность без работы
+MploreX- создатьель сея арт объекта
+"
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 662.0
+offset_top = 793.0
+offset_right = 1289.0
+offset_bottom = 965.0
+theme_override_colors/font_color = Color(0.483886, 0.558977, 0.488864, 1)
+theme_override_font_sizes/font_size = 30
+text = "Выйти в меню
+"
+
+[connection signal="pressed" from="Button1" to="ParallaxBackground" method="_on_button_1_pressed"]
